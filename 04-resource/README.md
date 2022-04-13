@@ -68,3 +68,17 @@ module: {
   ];
 }
 ```
+
+## source 资源
+
+```javascript
+module: {
+  rules: [
+    //...
+    {
+      test: /\.txt$/,
+      type: "asset/source",
+    },
+  ];
+}
+```
