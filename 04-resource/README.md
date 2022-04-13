@@ -54,3 +54,17 @@ output: {
 ```
 
 当两种方式同时存在时，优先使用第二种方式。
+
+## inline 资源
+
+```javascript
+module: {
+  rules: [
+    //...
+    {
+      test: /\.svg$/,
+      type: "asset/inline",
+    },
+  ];
+}
+```

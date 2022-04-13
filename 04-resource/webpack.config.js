@@ -30,6 +30,10 @@ module.exports = {
           filename: "images/[contenthash][ext]",
         },
       },
+      {
+        test: /\.svg$/,
+        type: "asset/inline",
+      },
     ],
   },
 };
