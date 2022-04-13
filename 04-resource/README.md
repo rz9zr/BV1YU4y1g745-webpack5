@@ -82,3 +82,40 @@ module: {
   ];
 }
 ```
+
+## 通用资源类型
+
+在 `resource/inline` 之间自动作选择：
+
+小于 8kb 作为 `inline`，否则作为 `resource`
+
+```javascript
+module: {
+  rules: [
+    //...
+    {
+      test: /\.jpg$/,
+      type: "asset",
+    },
+  ];
+}
+```
+
+可以设置这个规则，比如将大于 1M 的文件作为 `resource`:
+
+```javascript
+module: {
+  rules: [
+    //...
+    {
+      test: /\.jpg$/,
+      type: "asset",
+      parser: {
+        dataUrlCondition: {
+          maxSize: 1 * 1024 * 1024, // 1M
+        },
+      },
+    },
+  ];
+}
+```

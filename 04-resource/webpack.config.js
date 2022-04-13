@@ -35,8 +35,17 @@ module.exports = {
         type: "asset/inline",
       },
       {
-        test: /\.txt/,
+        test: /\.txt$/,
         type: "asset/source",
+      },
+      {
+        test: /\.jpg$/,
+        type: "asset",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 1 * 1024 * 1024, // 1M
+          },
+        },
       },
     ],
   },
