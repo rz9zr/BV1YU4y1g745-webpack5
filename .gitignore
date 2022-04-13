@@ -1,0 +1,7 @@
+.DS_Store
+.atom
+.idea
+.vscode
+.*~undo-tree~
+node_modules
+._.*
