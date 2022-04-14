@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Victor";
+  src: url(fonts/VictorMono-Regular.ttf) format("truetype");
+}
+
+.title {
+  font-size: 140%;
+  color: #000;
+  background: pink;
+  padding: 5px;
+  margin: 3px auto 3px auto;
+  width: 50%;
+  text-align: center;
+  border: 1px solid deeppink;
+}
+
+.block {
+  border: 1px solid #eeffdd;
+  min-height: 50px;
+  width: 50%;
+  margin: 3px auto 3px auto;
+  padding: 5px;
+  background: url(webpack-logo.svg) no-repeat right skyblue;
+  font-family: Victor;
+}
